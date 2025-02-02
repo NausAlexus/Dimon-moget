@@ -1,0 +1,51 @@
+<section>
+    <form
+        action="thanks_form.php"
+        method="post"
+        class="form"
+    >
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu nome"
+            required
+        />
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+        />
+
+        <label for="message">Mensagem</label>
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Digite seu comentário"
+            rows="5"
+            required
+        ></textarea>
+
+        <div class="checkbox">
+            <input
+                type="checkbox"
+                id="privacy-policy"
+                value="on"
+                name="privacy"
+                required
+            />
+            <label for="privacy-policy">
+                Eu concordo com a
+                <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    >Política de Privacidade</a
+                >
+            </label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
