@@ -290,7 +290,11 @@ body::-webkit-scrollbar-track {
     margin-top: 10px;
     object-fit: cover;
 }
-
+.content-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .country-hotels-img{
     width: 100%;
     height: 100%;
@@ -334,10 +338,70 @@ body::-webkit-scrollbar-track {
     font-weight: 500;
 }
 
+
+
+
+
+
+
+.Projects {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 30px;
+}
+
+.slide {
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
+
+
+
 @media (max-width: 1400px) {
     .projects-title {
         font-size: 28px;
         margin: 12px 0 20px 60px;
+    }
+    .Projects {
+        max-width: 1000px;
+    }
+    .slide img {
+        height: 300px;
     }
 }
 
@@ -346,11 +410,25 @@ body::-webkit-scrollbar-track {
         font-size: 22px;
         margin: 12px 0 20px 30px;
     }
+    .Projects {
+        max-width: 760px;
+    }
+    .slide img {
+        height: 260px;
+    }
 }
 
 @media (max-width: 768px) {
     .projects-title {
         margin: 12px 0 20px 10px;
+    }
+    .slide {
+        flex: 0 0 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .slide img {
+        height: auto;
     }
 }
 

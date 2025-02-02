@@ -15,7 +15,12 @@
 <body>
 
     <header>
-        <h1 class='header-name'>ArchiHarmony</h1>
+        <div class="nav-content">
+            <h1 class='header-name'>ArchiHarmony</h1>
+            <nav>
+
+            </nav>
+        </div>
         <div class="header-backgrounds">
             <img class='header-background' src="img/header-bg.webp" alt="Background" />
             <a class='header-btn' href='https://www.flickr.com/photos/ivlualizeu/albums/72177720319105929/' target='_blank' rel='noopener noreferrer'>More</a>
@@ -41,8 +46,59 @@
             <div class="Projects">
                 <h2 class="projects-title">Residential Projects</h2>
                 <div class="slider">
-
+                    <div class="slide">
+                        <img src="img/project-1.jpg" alt="Project 1" />
+                        <h3>Royal Mirage Villa</h3>
+                        <p>Mumbai, 2021</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-2.jpg" alt="Project 2" />
+                        <h3>Conservatorium apartment</h3>
+                        <p>Delhi, 2020</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-3.jpg" alt="Project 3" />
+                        <h3>Arabian Red</h3>
+                        <p>Bangalore, 2022</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-4.jpg" alt="Project 4" />
+                        <h3>Domestic Cenote</h3>
+                        <p>Calcutta, 2019</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-5.jpg" alt="Project 5" />
+                        <h3>Villa Ibiza</h3>
+                        <p>Chennai, 2023</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-6.jpg" alt="Project 6" />
+                        <h3>Villa Smama</h3>
+                        <p>Hyderabad, 2018</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-7.jpg" alt="Project 7" />
+                        <h3>Villa Las Gabias</h3>
+                        <p>Ahmedabad, 2021</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-8.jpg" alt="Project 8" />
+                        <h3>Villa Celeste</h3>
+                        <p>Pune, 2023</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-9.jpg" alt="Project 9" />
+                        <h3>Flying Carpet Villa</h3>
+                        <p>Surat, 2022</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project-10.jpg" alt="Project 10" />
+                        <h3>Four Elements Villa</h3>
+                        <p>Kanpur, 2016</p>
+                    </div>
                 </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
         </section>
 
@@ -64,29 +120,86 @@
             </div>
             <h2 class="projects-title hospital-title">Hospitality Projects</h2>
             <div class="projects-hospital-content">
+
                 <div class="country-hotels">
                     <div class="content-country">
-                      <p>Floating Venice Hotel, Dubai</p>
-                      <a
-                        class="hospital-btn"
-                        href={props.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        More
-                      </a>
+                      <p>Floating Venice Hotel, Mumbai</p>
                     </div>
                     <div class="content-info">
                       
-                        <div>
+                        <div class="content-info-text">
                             <p>Venice is probably the most famous and iconic city in the world, one of the oldest artificial islands ever built. For more than 15 centuries Venice has stood as a testament to construction innovation and technology, but also art, architecture and luxury lifestyle.</p>
                             <p>Venice is more than just a location, it’s a way of life, a unique state of mind, a city with a very delicate balance between water and land, nature and technology, traditional and contemporary art and events.</p>
                             <p>With the Submerged Venice we are proposing and enhancing this way of life. The project is a floating masterplan with a built-up area of 70,000 m2, that includes 20,000 m2 of underwater experience directly open to the ocean. A new way to experience the relationship between man and water.</p>
                         </div>
 
                     </div>
-                    <img src="img/header-bg.webp" alt="Floating Venice Hotel, Dubai" class="country-hotels-img"/>
+                    <img src="img/hospital-1.jpg" alt="Floating Venice Hotel, Mumbai" class="country-hotels-img"/>
                 </div>
+
+                <div class="country-hotels">
+                    <div class="content-country">
+                      <p>Swiss Hotel, Delhi</p>
+                    </div>
+                    <div class="content-info">
+                      
+                        <div class="content-info-text">
+                            <p>Living in a mountain... looking around above the rest... having a priv- ileged view... a privileged position... nobody, nothing can block your view... a shelter of privacy within the comfort of a community.</p>
+                            <p>We imagine a green mountain, a summer bright afternoon in the lower alps, overlooking the rows of wine yards sliding down gently towards the Lac Leman shore... We remember the summer swims at the floating platforms at Frauenbad Stadhousquai in Zürich... the wooden Rivas sailing across Luzern Lake from shore to shore...</p>
+                            <p>We rescue from our Swiss summer memories the long trekkings searching for small waterfalls... the walks through the green slopes of bright green grass ... Discovering Ice caves with stalactites of frozen water...</p>
+                        </div>
+
+                    </div>
+                    <img src="img/hospital-2.jpg" alt="Swiss Hotel, Delhi" class="country-hotels-img"/>
+                </div>
+
+                <div class="country-hotels">
+                    <div class="content-country">
+                      <p>Flamenca Hotel, Bangalore</p>
+                    </div>
+                    <div class="content-info">
+                      
+                        <div class="content-info-text">
+                            <p>The project for the Flamenca Hotel in Dubai, UAE, reinterprets the essence of the Andalusian Heritage representing the culture and history of a place through a contemporary construction.</p>
+                            <p>The building evokes the atmospheres of the old Spanish traditions and brings distant landscapes up to the Emirate coast. The project is shaped considering the main architectural and cultural features of the Andalusian legacies: el patio, la cala, el tablao and, of course, el flamenco</p>
+                        </div>
+
+                    </div>
+                    <img src="img/hospital-3.jpg" alt="Swiss Hotel, Delhi" class="country-hotels-img"/>
+                </div>
+
+                <div class="country-hotels">
+                    <div class="content-country">
+                      <p>Portofino Hotel, Calcutta</p>
+                    </div>
+                    <div class="content-info">
+                      
+                        <div class="content-info-text">
+                            <p>Living in a mountain... looking around above the rest... having a priv- ileged view... a privileged position... nobody, nothing can block your view... a shelter of privacy within the comfort of a community.</p>
+                            <p>We imagine a green mountain, a summer bright afternoon in the lower alps, overlooking the rows of wine yards sliding down gently towards the Lac Leman shore... We remember the summer swims at the floating platforms at Frauenbad Stadhousquai in Zürich... the wooden Rivas sailing across Luzern Lake from shore to shore...</p>
+                            <p>We rescue from our Swiss summer memories the long trekkings searching for small waterfalls... the walks through the green slopes of bright green grass ... Discovering Ice caves with stalactites of frozen water...</p>
+                        </div>
+
+                    </div>
+                    <img src="img/hospital-4.jpg" alt="Swiss Hotel, Delhi" class="country-hotels-img"/>
+                </div>
+
+                <div class="country-hotels">
+                    <div class="content-country">
+                      <p>Arina Hotel, Kanpur</p>
+                    </div>
+                    <div class="content-info">
+                      
+                        <div class="content-info-text">
+                            <p>A gentle balance between the artificial and nature, massive walls and the mountain, natural water and artificial fountains. A physical journey through the history and evolution of the Iranian tradition. An elegant re-interpretation in a modern key of the Persian culture.</p>
+                            <p>We took this shell and core project and turned the concept upside-down, modelling a new experience for the hotel guest by incorporating the surrounding nature and history within the building.</p>
+                            <p>A great start for our new journey in a land rich in cultural and historical inspiration.</p>
+                        </div>
+
+                    </div>
+                    <img src="img/hospital-5.jpg" alt="Swiss Hotel, Delhi" class="country-hotels-img"/>
+                </div>
+
             </div>
         </section>
 
@@ -98,13 +211,14 @@
             <div class='location-container'>
                 <h3 class='location-title'>Locations</h3>
                 <div class='location-img'>
-                    <a class='dubai-link' href="https://www.google.com/maps/@25.2008838,55.2705189,13z?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target='_blank' rel="noopener noreferrer">
-                        <img class='dubai-img' src="https://i.ibb.co/sg5Qdcp/dubai.webp" alt="Dubai" />
+                    <a class='dubai-link' href="https://www.google.com/maps/place/J47G+4G7,+COD,+Kirby+Place,+Delhi+Cantonment,+New+Delhi,+Delhi+110010/@28.6127856,77.1237122,17z"  target='_blank' rel="noopener noreferrer">
+                        <img class='dubai-img' src="img/map-delhi.jpg" alt="Delhi" />
                     </a>
-                    <a class='madrid-link' href="https://www.google.com/maps/@40.414293,-3.7055047,13.75z?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"  target='_blank' rel="noopener noreferrer">
-                        <img class='madrid-img' src="https://i.ibb.co/2dj8KNb/madrid.webp" alt="Madrid"/>
+                    <a class='madrid-link' href="https://www.google.com/maps/place/95,+Sabale+Nagar,+Kurla,+Mumbai,+Maharashtra+400089/@19.0706896,72.8850411,17z" target='_blank' rel="noopener noreferrer">
+                        <img class='madrid-img' src="img/map-mumbai.jpg" alt="Mumbai"/>
                     </a>
                 </div>
+                               
             </div>
         </section>
 
