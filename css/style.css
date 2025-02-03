@@ -70,8 +70,7 @@ nav {
     color: rgb(125, 125, 125);
 }
 .header-name,
-.header-title,
-.header-about {
+.header-title {
     padding: 0 60px;
 }
 
@@ -132,25 +131,10 @@ nav {
     margin-top: 18px;
 }
 
-.about-icon {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    margin-left: 140px;
-}
-
-.header-about {
-    display: flex;
-    margin-top: 18px;
-}
-
 .about-name {
     font-size: 18px;
 }
 
-.header-about-text {
-    margin-left: 12%;
-}
 
 .about-text2, .about-text3 {
     margin-top: 16px;
@@ -179,12 +163,6 @@ nav {
         font-size: 28px;
     }
 
-    .about-icon {
-        width: 300px;
-        height: 300px;
-        margin-left: 100px;
-    }
-
     .header-background {
         height: 480px;
     }
@@ -193,8 +171,7 @@ nav {
 @media (max-width: 1024px) {
 
     .header-name,
-    .header-title,
-    .header-about {
+    .header-title {
         padding: 0 30px;
     }
 
@@ -203,20 +180,10 @@ nav {
         font-size: 22px;
     }
 
-    .about-icon {
-        width: 200px;
-        height: 200px;
-        margin-left: 80px;
-        margin-top: 40px;
-    }
-
     .header-background {
         height: 400px;
     }
 
-    .header-about-text {
-        margin-left: 6%;
-    }
     .header-btn:hover{
         background-color: rgba(255, 255, 255, 0.121);
         transform: scale(1);
@@ -226,25 +193,12 @@ nav {
 @media (max-width: 768px) {
 
     .header-name,
-    .header-title,
-    .header-about {
+    .header-title {
         padding: 0 10px;
-    }
-
-    .about-icon {
-        width: 240px;
-        height: 240px;
-        margin-left: 80px;
-        margin-top: 10px;
     }
 
     .header-background {
         height: 380px;
-    }
-
-    .header-about-text {
-        margin-top: 30px;
-        margin-left: 0%;
     }
 
     .header-btn{
@@ -253,12 +207,6 @@ nav {
         width: 120px;
     }
 
-    .header-about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 18px;
-    }
     .header-nav-item {
         gap: 14px;
     }
@@ -1140,4 +1088,58 @@ nav {
     to {
         opacity: 1; /* Final opacity */
     }
+}
+
+.header-about {
+    margin-top: 10px;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+    background-color: #f9f9f9; /* Светлый фон для контраста */
+    padding: 40px; /* Отступы вокруг блока */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.header-about:hover {
+    transform: translateY(-5px); /* Поднимаем блок при наведении */
+}
+
+.header-about-icon {
+    flex: 0 0 150px; /* Фиксированная ширина для иконки */
+    margin-right: 20px; /* Отступ справа от иконки */
+    text-align: center; /* Центрируем текст под иконкой */
+}
+
+.about-icon {
+    width: 100%; /* Занимаем всю ширину контейнера */
+    border-radius: 50%; /* Круглая иконка */
+    border: 3px solid #007BFF; /* Граница вокруг иконки */
+    transition: transform 0.3s; /* Плавный переход для иконки */
+}
+
+.about-icon:hover {
+    transform: scale(1.1); /* Увеличиваем иконку при наведении */
+}
+
+.header-about-text {
+    flex: 1; /* Занимаем оставшееся пространство */
+}
+
+.about-name {
+    font-size: 1.5rem; /* Размер шрифта для имени */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.about-text1, .about-text2, .about-text3, .about-text4 {
+    font-size: 1rem; /* Размер шрифта для текста */
+    line-height: 1.6; /* Высота строки для удобочитаемости */
+    color: #555; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.about-text1 {
+    font-style: italic; /* Курсив для первого абзаца */
 }
