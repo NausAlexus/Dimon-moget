@@ -69,8 +69,7 @@ nav {
     color: rgb(125, 125, 125);
 }
 .header-name,
-.header-title,
-.header-about {
+.header-title {
     padding: 0 60px;
 }
 
@@ -131,25 +130,10 @@ nav {
     margin-top: 18px;
 }
 
-.about-icon {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    margin-left: 140px;
-}
-
-.header-about {
-    display: flex;
-    margin-top: 18px;
-}
-
 .about-name {
     font-size: 18px;
 }
 
-.header-about-text {
-    margin-left: 12%;
-}
 
 .about-text2, .about-text3 {
     margin-top: 16px;
@@ -178,12 +162,6 @@ nav {
         font-size: 28px;
     }
 
-    .about-icon {
-        width: 300px;
-        height: 300px;
-        margin-left: 100px;
-    }
-
     .header-background {
         height: 480px;
     }
@@ -192,8 +170,7 @@ nav {
 @media (max-width: 1024px) {
 
     .header-name,
-    .header-title,
-    .header-about {
+    .header-title {
         padding: 0 30px;
     }
 
@@ -202,20 +179,10 @@ nav {
         font-size: 22px;
     }
 
-    .about-icon {
-        width: 200px;
-        height: 200px;
-        margin-left: 80px;
-        margin-top: 40px;
-    }
-
     .header-background {
         height: 400px;
     }
 
-    .header-about-text {
-        margin-left: 6%;
-    }
     .header-btn:hover{
         background-color: rgba(255, 255, 255, 0.121);
         transform: scale(1);
@@ -225,25 +192,12 @@ nav {
 @media (max-width: 768px) {
 
     .header-name,
-    .header-title,
-    .header-about {
+    .header-title {
         padding: 0 10px;
-    }
-
-    .about-icon {
-        width: 240px;
-        height: 240px;
-        margin-left: 80px;
-        margin-top: 10px;
     }
 
     .header-background {
         height: 380px;
-    }
-
-    .header-about-text {
-        margin-top: 30px;
-        margin-left: 0%;
     }
 
     .header-btn{
@@ -252,12 +206,6 @@ nav {
         width: 120px;
     }
 
-    .header-about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 18px;
-    }
     .header-nav-item {
         gap: 14px;
     }
@@ -554,6 +502,7 @@ nav {
 .footer {
     margin: 60px;
     display: flex;
+    justify-content: center;
 }
 
 .location-title {
@@ -564,20 +513,8 @@ nav {
     margin-top: 18px;
 }
 
-.location-img img {
+.location-img-frame {
     width: 440px;
-    object-fit: cover;
-    box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-    transition: all 0.3s ease;
-}
-
-.location-img img:hover {
-    box-shadow: -21px -25px 35px -28px rgba(0,0,0,0.63);
-    -webkit-box-shadow: -21px -25px 35px -28px rgba(0,0,0,0.63);
-    -moz-box-shadow: -21px -25px 35px -28px rgba(0,0,0,0.63);
-    transform: translateY(-8px);
 }
 
 .madrid-link {
@@ -632,7 +569,7 @@ nav {
 }
 @media (max-width: 1400px) {
 
-    .location-img img {
+    .location-img-frame {
         width: 280px;
     }
 }
@@ -644,14 +581,8 @@ nav {
         align-items: center;
     }
 
-    .location-img img {
+    .location-img-frame {
         width: 340px;
-    }
-    .location-img img:hover {
-        box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-        transform: translateY(0px);
     }
 }
 
@@ -1076,4 +1007,175 @@ nav {
     .team-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Pricing Section Styles */
+.pricing-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between cards */
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.offer-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.offer-btn:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .pricing-content {
+        flex-direction: column;
+        align-items: center; /* Center cards on smaller screens */
+    }
+
+    .pricing-card {
+        width: 90%; /* Make cards full width on smaller screens */
+    }
+}
+
+.header-backgrounds {
+    position: relative;
+    text-align: center; /* Center align text */
+}
+
+.header-background {
+    width: 100%; /* Full width */
+    height: auto; /* Automatic height */
+}
+
+.header-title-overlay {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Shift by half width and height */
+    color: white; /* Text color */
+    font-size: 2.5rem; /* Font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+    opacity: 0; /* Initial opacity */
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Final opacity */
+    }
+}
+
+.project-hospital-backgrounds {
+    position: relative;
+    text-align: center; /* Center the text */
+}
+
+.main-background {
+    width: 100%; /* Take full width of the container */
+    height: auto; /* Automatic height */
+}
+
+.header-title-overlay {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Shift by half width and height */
+    color: white; /* Text color */
+    font-size: 2.5rem; /* Font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    opacity: 0; /* Initial opacity */
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Final opacity */
+    }
+}
+
+.header-about {
+    margin-top: 10px;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+    background-color: #f9f9f9; /* Светлый фон для контраста */
+    padding: 40px; /* Отступы вокруг блока */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.header-about:hover {
+    transform: translateY(-5px); /* Поднимаем блок при наведении */
+}
+
+.header-about-icon {
+    flex: 0 0 150px; /* Фиксированная ширина для иконки */
+    margin-right: 20px; /* Отступ справа от иконки */
+    text-align: center; /* Центрируем текст под иконкой */
+}
+
+.about-icon {
+    width: 100%; /* Занимаем всю ширину контейнера */
+    border-radius: 50%; /* Круглая иконка */
+    border: 3px solid #007BFF; /* Граница вокруг иконки */
+    transition: transform 0.3s; /* Плавный переход для иконки */
+}
+
+.about-icon:hover {
+    transform: scale(1.1); /* Увеличиваем иконку при наведении */
+}
+
+.header-about-text {
+    flex: 1; /* Занимаем оставшееся пространство */
+}
+
+.about-name {
+    font-size: 1.5rem; /* Размер шрифта для имени */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.about-text1, .about-text2, .about-text3, .about-text4 {
+    font-size: 1rem; /* Размер шрифта для текста */
+    line-height: 1.6; /* Высота строки для удобочитаемости */
+    color: #555; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.about-text1 {
+    font-style: italic; /* Курсив для первого абзаца */
 }
