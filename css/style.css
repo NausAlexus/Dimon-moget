@@ -518,6 +518,7 @@ nav {
 .footer {
     margin: 60px;
     display: flex;
+    justify-content: center;
 }
 
 .location-title {
@@ -528,20 +529,8 @@ nav {
     margin-top: 18px;
 }
 
-.location-img img {
+.location-img-frame {
     width: 440px;
-    object-fit: cover;
-    box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-    transition: all 0.3s ease;
-}
-
-.location-img img:hover {
-    box-shadow: -21px -25px 35px -28px rgba(0,0,0,0.63);
-    -webkit-box-shadow: -21px -25px 35px -28px rgba(0,0,0,0.63);
-    -moz-box-shadow: -21px -25px 35px -28px rgba(0,0,0,0.63);
-    transform: translateY(-8px);
 }
 
 .madrid-link {
@@ -596,7 +585,7 @@ nav {
 }
 @media (max-width: 1400px) {
 
-    .location-img img {
+    .location-img-frame {
         width: 280px;
     }
 }
@@ -608,14 +597,8 @@ nav {
         align-items: center;
     }
 
-    .location-img img {
+    .location-img-frame {
         width: 340px;
-    }
-    .location-img img:hover {
-        box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 42px -19px rgba(0,0,0,0.75);
-        transform: translateY(0px);
     }
 }
 
