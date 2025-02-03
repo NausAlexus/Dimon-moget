@@ -1212,3 +1212,9 @@ nav {
 .about-text1 {
     font-style: italic; /* Курсив для первого абзаца */
 }
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
