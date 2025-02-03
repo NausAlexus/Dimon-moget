@@ -53,6 +53,9 @@ html {
 nav {
     padding-right: 10px;
 }
+header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 .header-nav-item {
     display: flex;
     gap: 24px;
