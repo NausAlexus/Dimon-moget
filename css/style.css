@@ -352,6 +352,43 @@ nav {
     overflow: hidden;
 }
 
+
+.main-background {
+    width: 100%;
+    height: 740px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.projects-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 40px 0;
+    color: #333;
+}
+.country-hotels {
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.country-hotels:hover {
+    transform: scale(1.02);
+}
+
+.content-country p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #222;
+}
+
+
 .slider {
     display: flex;
     transition: transform 0.5s ease;
